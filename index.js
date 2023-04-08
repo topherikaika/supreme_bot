@@ -8,7 +8,7 @@ async function start() {
   return page
 }
 
-async function addToCart() {
+async function addToCart(page) {
   await page.$eval("button[class='button button--default fontWeight-bold bpS-button--s width-100 bg-red--aa c-white']", elem.click())
 }
 

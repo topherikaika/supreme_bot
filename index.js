@@ -13,5 +13,8 @@ async function addToCart() {
 
 }
 
+async function checkout() {
+
+}
 
 start()

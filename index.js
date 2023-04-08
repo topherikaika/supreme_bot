@@ -6,7 +6,12 @@ async function start() {
   const page = await browser.newPage()
   await page.goto(rand_url)
   await page.click(".button button--default fontWeight-bold bpS-button--s width-100 bg-red--aa c-white")
-  await browser.close()
+  return page
 }
+
+async function addToCart() {
+
+}
+
 
 start()

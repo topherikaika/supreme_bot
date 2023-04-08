@@ -10,7 +10,7 @@ async function start() {
 }
 
 async function addToCart() {
-
+  await page.$eval("button[class='button button--default fontWeight-bold bpS-button--s width-100 bg-red--aa c-white']", elem.click())
 }
 
 async function checkout() {

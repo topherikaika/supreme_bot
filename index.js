@@ -13,7 +13,8 @@ async function addToCart(page) {
 }
 
 async function checkout() {
-
+  const page = await start()
+  await addToCart(page)
 }
 
 //start()

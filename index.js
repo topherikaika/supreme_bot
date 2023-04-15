@@ -1,10 +1,11 @@
 const puppeteer = require("puppeteer")
-const rand_url = "https://jp.supreme.com/products/yxykcfp0qa7gnwfv"
+const rand_url = "https://jp.supreme.com/products/_l6uhoinj2j2cf99"
 
 async function start() {
   const browser = await puppeteer.launch({ headless: false })
   const page = await browser.newPage()
   await page.goto(rand_url)
+  await page.click('#size-7700781301964', { clickCount: 1 })
   return page
 }
 
@@ -17,4 +18,4 @@ async function checkout() {
   await addToCart(page)
 }
 
-//start()
+start()

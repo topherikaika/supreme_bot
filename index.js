@@ -6,7 +6,8 @@ async function start() {
   const page = await browser.newPage()
   await page.goto(rand_url)
   await page.click('#size-7700781301964', { clickCount: 1 })
-  await page.select('#size-7700781301964', 'Medium')
+  const value = '42719321915596'
+  await page.select('#size-7700781301964', value)
   return page
 }
 

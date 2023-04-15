@@ -1,5 +1,5 @@
 const puppeteer = require("puppeteer")
-const rand_url = "https://jp.supreme.com/collections/all"
+const rand_url = "https://jp.supreme.com/products/yxykcfp0qa7gnwfv"
 
 async function start() {
   const browser = await puppeteer.launch({ headless: false })
